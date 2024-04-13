@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2A587F162BC93F2400E64FD9 /* CleanCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F152BC93F2400E64FD9 /* CleanCryptoApp.swift */; };
-		2A587F182BC93F2400E64FD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F172BC93F2400E64FD9 /* ContentView.swift */; };
 		2A587F1A2BC93F2500E64FD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A587F192BC93F2500E64FD9 /* Assets.xcassets */; };
 		2A587F1D2BC93F2500E64FD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A587F1C2BC93F2500E64FD9 /* Preview Assets.xcassets */; };
 		2A587F272BC93F2500E64FD9 /* CleanCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F262BC93F2500E64FD9 /* CleanCryptoTests.swift */; };
+		2A587F432BCAA6B100E64FD9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F422BCAA6B100E64FD9 /* MainView.swift */; };
+		2A587F462BCAA74C00E64FD9 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F452BCAA74C00E64FD9 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,11 +28,12 @@
 /* Begin PBXFileReference section */
 		2A587F122BC93F2400E64FD9 /* CleanCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A587F152BC93F2400E64FD9 /* CleanCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCryptoApp.swift; sourceTree = "<group>"; };
-		2A587F172BC93F2400E64FD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A587F192BC93F2500E64FD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A587F1C2BC93F2500E64FD9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A587F222BC93F2500E64FD9 /* CleanCryptoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanCryptoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A587F262BC93F2500E64FD9 /* CleanCryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCryptoTests.swift; sourceTree = "<group>"; };
+		2A587F422BCAA6B100E64FD9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2A587F452BCAA74C00E64FD9 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +75,9 @@
 		2A587F142BC93F2400E64FD9 /* CleanCrypto */ = {
 			isa = PBXGroup;
 			children = (
-				2A587F152BC93F2400E64FD9 /* CleanCryptoApp.swift */,
-				2A587F172BC93F2400E64FD9 /* ContentView.swift */,
-				2A587F192BC93F2500E64FD9 /* Assets.xcassets */,
+				2A587F442BCAA6E500E64FD9 /* App */,
+				2A587F402BCAA66700E64FD9 /* Presentation */,
+				2A587F472BCAA77B00E64FD9 /* Resource */,
 				2A587F1B2BC93F2500E64FD9 /* Preview Content */,
 			);
 			path = CleanCrypto;
@@ -84,6 +86,7 @@
 		2A587F1B2BC93F2500E64FD9 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				2A587F3F2BC9414500E64FD9 /* Presentation */,
 				2A587F1C2BC93F2500E64FD9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -95,6 +98,46 @@
 				2A587F262BC93F2500E64FD9 /* CleanCryptoTests.swift */,
 			);
 			path = CleanCryptoTests;
+			sourceTree = "<group>";
+		};
+		2A587F3F2BC9414500E64FD9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2A587F402BCAA66700E64FD9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2A587F412BCAA68500E64FD9 /* Main */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2A587F412BCAA68500E64FD9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2A587F422BCAA6B100E64FD9 /* MainView.swift */,
+				2A587F452BCAA74C00E64FD9 /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2A587F442BCAA6E500E64FD9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2A587F152BC93F2400E64FD9 /* CleanCryptoApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2A587F472BCAA77B00E64FD9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2A587F192BC93F2500E64FD9 /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A587F182BC93F2400E64FD9 /* ContentView.swift in Sources */,
+				2A587F432BCAA6B100E64FD9 /* MainView.swift in Sources */,
 				2A587F162BC93F2400E64FD9 /* CleanCryptoApp.swift in Sources */,
+				2A587F462BCAA74C00E64FD9 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
