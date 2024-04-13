@@ -11,6 +11,10 @@ import SwiftUI
 struct CleanCryptoApp: App {
     @StateObject var viewModel: MainViewModel = MainViewModel()
     
+    init() {
+        DIContainer.shared.registration()
+    }
+    
     var body: some Scene {
         WindowGroup {
             MainView()

@@ -13,6 +13,8 @@
 		2A587F272BC93F2500E64FD9 /* CleanCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F262BC93F2500E64FD9 /* CleanCryptoTests.swift */; };
 		2A587F432BCAA6B100E64FD9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F422BCAA6B100E64FD9 /* MainView.swift */; };
 		2A587F462BCAA74C00E64FD9 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F452BCAA74C00E64FD9 /* MainViewModel.swift */; };
+		2A587F4A2BCAB19700E64FD9 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F492BCAB19700E64FD9 /* DIContainer.swift */; };
+		2A587F522BCACA8E00E64FD9 /* DIContainer+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F512BCACA8E00E64FD9 /* DIContainer+Injection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 		2A587F262BC93F2500E64FD9 /* CleanCryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCryptoTests.swift; sourceTree = "<group>"; };
 		2A587F422BCAA6B100E64FD9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2A587F452BCAA74C00E64FD9 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		2A587F492BCAB19700E64FD9 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		2A587F512BCACA8E00E64FD9 /* DIContainer+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DIContainer+Injection.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				2A587F442BCAA6E500E64FD9 /* App */,
+				2A587F482BCAB17800E64FD9 /* DI */,
 				2A587F402BCAA66700E64FD9 /* Presentation */,
 				2A587F472BCAA77B00E64FD9 /* Resource */,
 				2A587F1B2BC93F2500E64FD9 /* Preview Content */,
@@ -138,6 +143,15 @@
 				2A587F192BC93F2500E64FD9 /* Assets.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		2A587F482BCAB17800E64FD9 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				2A587F492BCAB19700E64FD9 /* DIContainer.swift */,
+				2A587F512BCACA8E00E64FD9 /* DIContainer+Injection.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A587F522BCACA8E00E64FD9 /* DIContainer+Injection.swift in Sources */,
 				2A587F432BCAA6B100E64FD9 /* MainView.swift in Sources */,
 				2A587F162BC93F2400E64FD9 /* CleanCryptoApp.swift in Sources */,
+				2A587F4A2BCAB19700E64FD9 /* DIContainer.swift in Sources */,
 				2A587F462BCAA74C00E64FD9 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
