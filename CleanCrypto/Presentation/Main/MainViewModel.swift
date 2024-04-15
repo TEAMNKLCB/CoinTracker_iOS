@@ -5,7 +5,7 @@
 //  Created by kai on 4/13/24.
 //
 
-import Foundation
+import SwiftUI
 
 final class MainViewModel: ObservableObject {
     
