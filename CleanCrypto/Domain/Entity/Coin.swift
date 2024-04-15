@@ -22,6 +22,13 @@ struct Coin: Decodable, Identifiable {
 }
 
 extension Coin {
+    var imageURL: URL? {
+        let safeURL = large.trimmingString()
+        return URL(string: safeURL)
+    }
+}
+
+extension Coin {
     static let mock = Coin(
         id: "zcoin",
         name: "Firo",

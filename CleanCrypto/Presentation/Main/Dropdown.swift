@@ -15,10 +15,16 @@ struct Dropdown: View {
             LazyVStack(spacing: 15) {
                 ForEach(options) { option in
                     HStack {
-                        Image("bitcoin")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 25, height: 25)
+                        AsyncImage(url: option.imageURL) { phase in
+                            if let image = phase.image {
+                                image
+                                    .resizable()
+                                    .scaledToFit()
+                            } else {
+                                ProgressView()
+                            }
+                        }
+                        .frame(width: 25, height: 25)
                         
                         Text(option.name)
                             .foregroundStyle(.black)
