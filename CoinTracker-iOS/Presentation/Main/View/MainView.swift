@@ -34,10 +34,10 @@ struct MainView: View {
                     .padding(.top, 20)
                 
                 TabView(selection: $selectedTab) {
-                    Text(CategoryTab.coins.title)
+                    coinsList
                         .tag(CategoryTab.coins)
                     
-                    Text(CategoryTab.whishlists.title)
+                    whishlist
                         .tag(CategoryTab.whishlists)
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
@@ -71,6 +71,21 @@ extension MainView {
             }
             Spacer()
         }
+    }
+    
+    private var coinsList: some View {
+        ScrollView {
+            LazyVStack(spacing: 15) {
+                ForEach(0..<20) { _ in
+                    CoinRow(coin: Coin.mock)
+                }
+            }
+            .padding(.top)
+        }
+    }
+    
+    private var whishlist: some View {
+        Text(CategoryTab.whishlists.title)
     }
 }
 

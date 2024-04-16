@@ -25,6 +25,7 @@
 		2A587F5B2BCADA3C00E64FD9 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F5A2BCADA3C00E64FD9 /* CoordinatorProtocol.swift */; };
 		2A587F5E2BCADADF00E64FD9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F5D2BCADADF00E64FD9 /* DetailView.swift */; };
 		2AFEE35A2BCEC34A00F446B9 /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFEE3592BCEC34A00F446B9 /* TabItemView.swift */; };
+		2AFEE3602BCEE49A00F446B9 /* CoinRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFEE35F2BCEE49A00F446B9 /* CoinRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		2A587F5A2BCADA3C00E64FD9 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		2A587F5D2BCADADF00E64FD9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		2AFEE3592BCEC34A00F446B9 /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
+		2AFEE35F2BCEE49A00F446B9 /* CoinRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +246,7 @@
 				2A4F274A2BCD695500904752 /* SearchBar.swift */,
 				2A4F27502BCD86B600904752 /* Dropdown.swift */,
 				2AFEE3592BCEC34A00F446B9 /* TabItemView.swift */,
+				2AFEE35F2BCEE49A00F446B9 /* CoinRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				2A4F27582BCD923300904752 /* String+Extension.swift in Sources */,
 				2A587F4A2BCAB19700E64FD9 /* DIContainer.swift in Sources */,
 				2A4F274F2BCD73B900904752 /* Constant.swift in Sources */,
+				2AFEE3602BCEE49A00F446B9 /* CoinRow.swift in Sources */,
 				2A4F27482BCD65F300904752 /* PlaceholderModifier.swift in Sources */,
 				2AFEE35A2BCEC34A00F446B9 /* TabItemView.swift in Sources */,
 				2A4F27512BCD86B600904752 /* Dropdown.swift in Sources */,
