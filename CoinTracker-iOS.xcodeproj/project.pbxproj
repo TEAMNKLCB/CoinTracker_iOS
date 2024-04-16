@@ -14,10 +14,10 @@
 		2A4F27512BCD86B600904752 /* Dropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F27502BCD86B600904752 /* Dropdown.swift */; };
 		2A4F27552BCD8A7900904752 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F27542BCD8A7900904752 /* Coin.swift */; };
 		2A4F27582BCD923300904752 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F27572BCD923300904752 /* String+Extension.swift */; };
-		2A587F162BC93F2400E64FD9 /* CleanCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F152BC93F2400E64FD9 /* CleanCryptoApp.swift */; };
+		2A587F162BC93F2400E64FD9 /* CoinTracker-iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F152BC93F2400E64FD9 /* CoinTracker-iOSApp.swift */; };
 		2A587F1A2BC93F2500E64FD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A587F192BC93F2500E64FD9 /* Assets.xcassets */; };
 		2A587F1D2BC93F2500E64FD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A587F1C2BC93F2500E64FD9 /* Preview Assets.xcassets */; };
-		2A587F272BC93F2500E64FD9 /* CleanCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F262BC93F2500E64FD9 /* CleanCryptoTests.swift */; };
+		2A587F272BC93F2500E64FD9 /* CoinTracker-iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F262BC93F2500E64FD9 /* CoinTracker-iOSTests.swift */; };
 		2A587F432BCAA6B100E64FD9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F422BCAA6B100E64FD9 /* MainView.swift */; };
 		2A587F462BCAA74C00E64FD9 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F452BCAA74C00E64FD9 /* MainViewModel.swift */; };
 		2A587F4A2BCAB19700E64FD9 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F492BCAB19700E64FD9 /* DIContainer.swift */; };
@@ -44,12 +44,12 @@
 		2A4F27502BCD86B600904752 /* Dropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dropdown.swift; sourceTree = "<group>"; };
 		2A4F27542BCD8A7900904752 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		2A4F27572BCD923300904752 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
-		2A587F122BC93F2400E64FD9 /* CleanCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A587F152BC93F2400E64FD9 /* CleanCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCryptoApp.swift; sourceTree = "<group>"; };
+		2A587F122BC93F2400E64FD9 /* CoinTracker-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoinTracker-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A587F152BC93F2400E64FD9 /* CoinTracker-iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoinTracker-iOSApp.swift"; sourceTree = "<group>"; };
 		2A587F192BC93F2500E64FD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A587F1C2BC93F2500E64FD9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2A587F222BC93F2500E64FD9 /* CleanCryptoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanCryptoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A587F262BC93F2500E64FD9 /* CleanCryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCryptoTests.swift; sourceTree = "<group>"; };
+		2A587F222BC93F2500E64FD9 /* CoinTracker-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoinTracker-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A587F262BC93F2500E64FD9 /* CoinTracker-iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoinTracker-iOSTests.swift"; sourceTree = "<group>"; };
 		2A587F422BCAA6B100E64FD9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2A587F452BCAA74C00E64FD9 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		2A587F492BCAB19700E64FD9 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
@@ -119,8 +119,8 @@
 		2A587F092BC93F2400E64FD9 = {
 			isa = PBXGroup;
 			children = (
-				2A587F142BC93F2400E64FD9 /* CleanCrypto */,
-				2A587F252BC93F2500E64FD9 /* CleanCryptoTests */,
+				2A587F142BC93F2400E64FD9 /* CoinTracker-iOS */,
+				2A587F252BC93F2500E64FD9 /* CoinTracker-iOSTests */,
 				2A587F132BC93F2400E64FD9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,22 +128,22 @@
 		2A587F132BC93F2400E64FD9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A587F122BC93F2400E64FD9 /* CleanCrypto.app */,
-				2A587F222BC93F2500E64FD9 /* CleanCryptoTests.xctest */,
+				2A587F122BC93F2400E64FD9 /* CoinTracker-iOS.app */,
+				2A587F222BC93F2500E64FD9 /* CoinTracker-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2A587F142BC93F2400E64FD9 /* CleanCrypto */ = {
+		2A587F142BC93F2400E64FD9 /* CoinTracker-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				2A587F532BCACFC700E64FD9 /* Core */,
 				2A4F27522BCD8A5E00904752 /* Domain */,
 				2A587F402BCAA66700E64FD9 /* Presentation */,
-				2A587F152BC93F2400E64FD9 /* CleanCryptoApp.swift */,
+				2A587F152BC93F2400E64FD9 /* CoinTracker-iOSApp.swift */,
 				2A587F472BCAA77B00E64FD9 /* Resource */,
 			);
-			path = CleanCrypto;
+			path = "CoinTracker-iOS";
 			sourceTree = "<group>";
 		};
 		2A587F1B2BC93F2500E64FD9 /* Preview Content */ = {
@@ -155,12 +155,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2A587F252BC93F2500E64FD9 /* CleanCryptoTests */ = {
+		2A587F252BC93F2500E64FD9 /* CoinTracker-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				2A587F262BC93F2500E64FD9 /* CleanCryptoTests.swift */,
+				2A587F262BC93F2500E64FD9 /* CoinTracker-iOSTests.swift */,
 			);
-			path = CleanCryptoTests;
+			path = "CoinTracker-iOSTests";
 			sourceTree = "<group>";
 		};
 		2A587F3F2BC9414500E64FD9 /* Presentation */ = {
@@ -240,9 +240,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2A587F112BC93F2400E64FD9 /* CleanCrypto */ = {
+		2A587F112BC93F2400E64FD9 /* CoinTracker-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A587F362BC93F2500E64FD9 /* Build configuration list for PBXNativeTarget "CleanCrypto" */;
+			buildConfigurationList = 2A587F362BC93F2500E64FD9 /* Build configuration list for PBXNativeTarget "CoinTracker-iOS" */;
 			buildPhases = (
 				2A587F0E2BC93F2400E64FD9 /* Sources */,
 				2A587F0F2BC93F2400E64FD9 /* Frameworks */,
@@ -252,14 +252,14 @@
 			);
 			dependencies = (
 			);
-			name = CleanCrypto;
+			name = "CoinTracker-iOS";
 			productName = CleanCrypto;
-			productReference = 2A587F122BC93F2400E64FD9 /* CleanCrypto.app */;
+			productReference = 2A587F122BC93F2400E64FD9 /* CoinTracker-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2A587F212BC93F2500E64FD9 /* CleanCryptoTests */ = {
+		2A587F212BC93F2500E64FD9 /* CoinTracker-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A587F392BC93F2500E64FD9 /* Build configuration list for PBXNativeTarget "CleanCryptoTests" */;
+			buildConfigurationList = 2A587F392BC93F2500E64FD9 /* Build configuration list for PBXNativeTarget "CoinTracker-iOSTests" */;
 			buildPhases = (
 				2A587F1E2BC93F2500E64FD9 /* Sources */,
 				2A587F1F2BC93F2500E64FD9 /* Frameworks */,
@@ -270,9 +270,9 @@
 			dependencies = (
 				2A587F242BC93F2500E64FD9 /* PBXTargetDependency */,
 			);
-			name = CleanCryptoTests;
+			name = "CoinTracker-iOSTests";
 			productName = CleanCryptoTests;
-			productReference = 2A587F222BC93F2500E64FD9 /* CleanCryptoTests.xctest */;
+			productReference = 2A587F222BC93F2500E64FD9 /* CoinTracker-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -294,7 +294,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2A587F0D2BC93F2400E64FD9 /* Build configuration list for PBXProject "CleanCrypto" */;
+			buildConfigurationList = 2A587F0D2BC93F2400E64FD9 /* Build configuration list for PBXProject "CoinTracker-iOS" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -307,8 +307,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2A587F112BC93F2400E64FD9 /* CleanCrypto */,
-				2A587F212BC93F2500E64FD9 /* CleanCryptoTests */,
+				2A587F112BC93F2400E64FD9 /* CoinTracker-iOS */,
+				2A587F212BC93F2500E64FD9 /* CoinTracker-iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -342,7 +342,7 @@
 				2A587F522BCACA8E00E64FD9 /* DIContainer+Injection.swift in Sources */,
 				2A587F432BCAA6B100E64FD9 /* MainView.swift in Sources */,
 				2A4F274D2BCD6AD600904752 /* HideModifier.swift in Sources */,
-				2A587F162BC93F2400E64FD9 /* CleanCryptoApp.swift in Sources */,
+				2A587F162BC93F2400E64FD9 /* CoinTracker-iOSApp.swift in Sources */,
 				2A4F274B2BCD695500904752 /* SearchBar.swift in Sources */,
 				2A4F27552BCD8A7900904752 /* Coin.swift in Sources */,
 				2A4F27582BCD923300904752 /* String+Extension.swift in Sources */,
@@ -358,7 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A587F272BC93F2500E64FD9 /* CleanCryptoTests.swift in Sources */,
+				2A587F272BC93F2500E64FD9 /* CoinTracker-iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +367,7 @@
 /* Begin PBXTargetDependency section */
 		2A587F242BC93F2500E64FD9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2A587F112BC93F2400E64FD9 /* CleanCrypto */;
+			target = 2A587F112BC93F2400E64FD9 /* CoinTracker-iOS */;
 			targetProxy = 2A587F232BC93F2500E64FD9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -499,7 +499,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CleanCrypto/Resource/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CoinTracker-iOS/Resource/Preview Content\"";
 				DEVELOPMENT_TEAM = NLCYJ22AZZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -534,7 +534,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CleanCrypto/Resource/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CoinTracker-iOS/Resource/Preview Content\"";
 				DEVELOPMENT_TEAM = NLCYJ22AZZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -578,7 +578,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanCrypto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CleanCrypto";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinTracker-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoinTracker-iOS";
 			};
 			name = Debug;
 		};
@@ -598,14 +598,14 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanCrypto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CleanCrypto";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinTracker-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoinTracker-iOS";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2A587F0D2BC93F2400E64FD9 /* Build configuration list for PBXProject "CleanCrypto" */ = {
+		2A587F0D2BC93F2400E64FD9 /* Build configuration list for PBXProject "CoinTracker-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A587F342BC93F2500E64FD9 /* Debug */,
@@ -614,7 +614,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A587F362BC93F2500E64FD9 /* Build configuration list for PBXNativeTarget "CleanCrypto" */ = {
+		2A587F362BC93F2500E64FD9 /* Build configuration list for PBXNativeTarget "CoinTracker-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A587F372BC93F2500E64FD9 /* Debug */,
@@ -623,7 +623,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A587F392BC93F2500E64FD9 /* Build configuration list for PBXNativeTarget "CleanCryptoTests" */ = {
+		2A587F392BC93F2500E64FD9 /* Build configuration list for PBXNativeTarget "CoinTracker-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A587F3A2BC93F2500E64FD9 /* Debug */,

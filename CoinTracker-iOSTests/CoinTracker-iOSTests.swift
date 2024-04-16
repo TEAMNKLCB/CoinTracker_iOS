@@ -1,14 +1,14 @@
 //
-//  CleanCryptoTests.swift
-//  CleanCryptoTests
+//  CoinTracker-iOSTests.swift
+//  CoinTracker-iOS
 //
 //  Created by kai on 4/12/24.
 //
 
 import XCTest
-@testable import CleanCrypto
+@testable import CoinTracker_iOS
 
-final class CleanCryptoTests: XCTestCase {
+final class CoinTracker: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

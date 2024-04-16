@@ -1,6 +1,6 @@
 //
 //  DIContainer.swift
-//  CleanCrypto
+//  CoinTracker-iOS
 //
 //  Created by kai on 4/13/24.
 //

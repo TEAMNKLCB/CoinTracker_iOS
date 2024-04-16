@@ -1,6 +1,6 @@
 //
 //  PlaceholderModifier.swift
-//  CleanCrypto
+//  CoinTracker-iOS
 //
 //  Created by kai on 4/15/24.
 //

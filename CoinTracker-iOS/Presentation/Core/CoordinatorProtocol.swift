@@ -1,6 +1,6 @@
 //
 //  CoordinatorProtocol.swift
-//  CleanCrypto
+//  CoinTracker-iOS
 //
 //  Created by kai on 4/14/24.
 //

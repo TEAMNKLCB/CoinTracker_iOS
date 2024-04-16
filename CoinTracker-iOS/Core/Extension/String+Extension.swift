@@ -1,6 +1,6 @@
 //
 //  String+Extension.swift
-//  CleanCrypto
+//  CoinTracker-iOS
 //
 //  Created by kai on 4/16/24.
 //
