@@ -12,8 +12,11 @@
 		2A4F274D2BCD6AD600904752 /* HideModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F274C2BCD6AD600904752 /* HideModifier.swift */; };
 		2A4F274F2BCD73B900904752 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F274E2BCD73B900904752 /* Constant.swift */; };
 		2A4F27512BCD86B600904752 /* Dropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F27502BCD86B600904752 /* Dropdown.swift */; };
-		2A4F27552BCD8A7900904752 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F27542BCD8A7900904752 /* Coin.swift */; };
+		2A4F27552BCD8A7900904752 /* RankingCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F27542BCD8A7900904752 /* RankingCoin.swift */; };
 		2A4F27582BCD923300904752 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F27572BCD923300904752 /* String+Extension.swift */; };
+		2A577EE12BD00725002E9630 /* CoinDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A577EE02BD00725002E9630 /* CoinDetail.swift */; };
+		2A577EE32BD0080F002E9630 /* PriceCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A577EE22BD0080F002E9630 /* PriceCoin.swift */; };
+		2A577EE52BD027F7002E9630 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A577EE42BD027F7002E9630 /* Double+Extension.swift */; };
 		2A587F162BC93F2400E64FD9 /* CoinTracker-iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F152BC93F2400E64FD9 /* CoinTracker-iOSApp.swift */; };
 		2A587F1A2BC93F2500E64FD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A587F192BC93F2500E64FD9 /* Assets.xcassets */; };
 		2A587F1D2BC93F2500E64FD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A587F1C2BC93F2500E64FD9 /* Preview Assets.xcassets */; };
@@ -44,8 +47,11 @@
 		2A4F274C2BCD6AD600904752 /* HideModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideModifier.swift; sourceTree = "<group>"; };
 		2A4F274E2BCD73B900904752 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		2A4F27502BCD86B600904752 /* Dropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dropdown.swift; sourceTree = "<group>"; };
-		2A4F27542BCD8A7900904752 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		2A4F27542BCD8A7900904752 /* RankingCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCoin.swift; sourceTree = "<group>"; };
 		2A4F27572BCD923300904752 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		2A577EE02BD00725002E9630 /* CoinDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetail.swift; sourceTree = "<group>"; };
+		2A577EE22BD0080F002E9630 /* PriceCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCoin.swift; sourceTree = "<group>"; };
+		2A577EE42BD027F7002E9630 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		2A587F122BC93F2400E64FD9 /* CoinTracker-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoinTracker-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A587F152BC93F2400E64FD9 /* CoinTracker-iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoinTracker-iOSApp.swift"; sourceTree = "<group>"; };
 		2A587F192BC93F2500E64FD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,7 +113,9 @@
 		2A4F27532BCD8A6500904752 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				2A4F27542BCD8A7900904752 /* Coin.swift */,
+				2A4F27542BCD8A7900904752 /* RankingCoin.swift */,
+				2A577EE22BD0080F002E9630 /* PriceCoin.swift */,
+				2A577EE02BD00725002E9630 /* CoinDetail.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -116,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				2A4F27572BCD923300904752 /* String+Extension.swift */,
+				2A577EE42BD027F7002E9630 /* Double+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -363,13 +372,16 @@
 				2A587F5E2BCADADF00E64FD9 /* DetailView.swift in Sources */,
 				2A587F522BCACA8E00E64FD9 /* DIContainer+Injection.swift in Sources */,
 				2A587F432BCAA6B100E64FD9 /* MainView.swift in Sources */,
+				2A577EE32BD0080F002E9630 /* PriceCoin.swift in Sources */,
 				2A4F274D2BCD6AD600904752 /* HideModifier.swift in Sources */,
 				2A587F162BC93F2400E64FD9 /* CoinTracker-iOSApp.swift in Sources */,
 				2A4F274B2BCD695500904752 /* SearchBar.swift in Sources */,
-				2A4F27552BCD8A7900904752 /* Coin.swift in Sources */,
+				2A4F27552BCD8A7900904752 /* RankingCoin.swift in Sources */,
 				2A4F27582BCD923300904752 /* String+Extension.swift in Sources */,
 				2A587F4A2BCAB19700E64FD9 /* DIContainer.swift in Sources */,
+				2A577EE52BD027F7002E9630 /* Double+Extension.swift in Sources */,
 				2A4F274F2BCD73B900904752 /* Constant.swift in Sources */,
+				2A577EE12BD00725002E9630 /* CoinDetail.swift in Sources */,
 				2AFEE3602BCEE49A00F446B9 /* CoinRow.swift in Sources */,
 				2A4F27482BCD65F300904752 /* PlaceholderModifier.swift in Sources */,
 				2AFEE35A2BCEC34A00F446B9 /* TabItemView.swift in Sources */,

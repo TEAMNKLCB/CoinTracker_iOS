@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CoinRow: View {
-    var coin: Coin
+    var coin: PriceCoin
     
     var body: some View {
         HStack {
@@ -24,10 +24,10 @@ struct CoinRow: View {
             .frame(width: 30, height: 30)
 
             VStack(alignment: .leading, spacing: 5) {
-                Text("Bitcoin")
+                Text(coin.name)
                     .foregroundColor(Color.white)
                     .font(.subheadline)
-                Text("btc")
+                Text(coin.symbol)
                     .foregroundColor(Color.gray)
                     .font(.subheadline)
             }
@@ -35,11 +35,15 @@ struct CoinRow: View {
             Spacer()
             
             VStack(alignment: .trailing, spacing: 5) {
-                Text("₩62,465.00")
+                Text(coin.currentPrice.formattedAsCurrency)
                     .foregroundColor(Color.white)
                     .font(.subheadline)
-                Text("-2.58973")
-                    .foregroundStyle(Color.red)
+                Text("\(coin.priceChangePercentage24H)")
+                    .foregroundStyle(
+                        coin.priceChangePercentage24H.sign == .minus
+                        ? Color.red
+                        : Color.lightGreen
+                    )
                     .font(.subheadline)
             }
         }

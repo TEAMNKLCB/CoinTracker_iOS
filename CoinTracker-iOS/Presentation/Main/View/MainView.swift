@@ -23,7 +23,7 @@ struct MainView: View {
                 SearchBar(text: $searchText)
                     .focused($isSearchBarFocused)
                     .overlay(alignment: .top) {
-                        Dropdown(options: Coin.mockArray)
+                        Dropdown(options: RankingCoin.mockArray)
                             .hide(!isSearchBarFocused)
                             .animation(.spring(), value: isSearchBarFocused)
                     }
@@ -77,7 +77,7 @@ extension MainView {
         ScrollView {
             LazyVStack(spacing: 15) {
                 ForEach(0..<20) { _ in
-                    CoinRow(coin: Coin.mock)
+                    CoinRow(coin: PriceCoin.mock)
                 }
             }
             .padding(.top)

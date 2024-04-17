@@ -1,5 +1,5 @@
 //
-//  SearchMarket.swift
+//  RankingCoin.swift
 //  CoinTracker-iOS
 //
 //  Created by kai on 4/16/24.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Coin: Decodable, Identifiable {
+struct RankingCoin: Decodable, Identifiable {
     let id, name, apiSymbol, symbol: String
     let marketCapRank: Int?
     let large: String
@@ -21,15 +21,15 @@ struct Coin: Decodable, Identifiable {
     }
 }
 
-extension Coin {
+extension RankingCoin {
     var imageURL: URL? {
         let safeURL = large.trimmingString()
         return URL(string: safeURL)
     }
 }
 
-extension Coin {
-    static let mock = Coin(
+extension RankingCoin {
+    static let mock: Self = .init(
         id: "zcoin",
         name: "Firo",
         apiSymbol: "zcoin",
@@ -38,7 +38,7 @@ extension Coin {
         large: "https://assets.coingecko.com/coins/images/479/large/firocoingecko.png"
     )
     
-    static let mockArray: [Coin] = [
+    static let mockArray: [Self] = [
         .init(id: "zcoin",
               name: "Firo",
               apiSymbol: "zcoin",

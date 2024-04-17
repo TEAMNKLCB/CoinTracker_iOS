@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Dropdown: View {
-    var options: [Coin]
+    var options: [RankingCoin]
     
     var body: some View {
         ScrollView {
@@ -53,5 +53,5 @@ struct Dropdown: View {
 }
 
 #Preview {
-    Dropdown(options: Coin.mockArray)
+    Dropdown(options: RankingCoin.mockArray)
 }
