@@ -15,40 +15,45 @@ struct MainView: View {
     @State private var selectedTab: CategoryTab = .coins
     
     var body: some View {
-        ZStack {
-            Color.darkGray
-                .ignoresSafeArea()
-            
-            VStack {
-                SearchBar(text: $searchText)
-                    .focused($isSearchBarFocused)
-                    .overlay(alignment: .top) {
-                        Dropdown(options: RankingCoin.mockArray)
-                            .hide(!isSearchBarFocused)
-                            .animation(.spring(), value: isSearchBarFocused)
-                    }
+        NavigationView {
+            ZStack {
+                Color.darkGray
+                    .ignoresSafeArea()
                 
-                sortButton
-                
-                TabItemView(selectedTab: $selectedTab)
-                    .padding(.top, 20)
-                
-                TabView(selection: $selectedTab) {
-                    coinsList
-                        .tag(CategoryTab.coins)
+                VStack {
+                    SearchBar(text: $searchText)
+                        .focused($isSearchBarFocused)
+                        .overlay(alignment: .top) {
+                            Dropdown(options: RankingCoin.mockArray)
+                                .hide(!isSearchBarFocused)
+                                .animation(.spring(), value: isSearchBarFocused)
+                        }
+                        .zIndex(4)
                     
-                    whishlist
-                        .tag(CategoryTab.whishlists)
+                    sortButton
+                    
+                    TabItemView(selectedTab: $selectedTab)
+                        .padding(.top, 20)
+                    
+                    TabView(selection: $selectedTab) {
+                        coinsList
+                            .tag(CategoryTab.coins)
+                        
+                        whishlist
+                            .tag(CategoryTab.whishlists)
+                    }
+                    .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+                    
+                    Spacer()
                 }
-                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-                
-                Spacer()
+                .padding(.horizontal)
             }
-            .padding(.horizontal)
-        }
-        .onTapGesture {
-            searchText = ""
-            isSearchBarFocused = false
+            .onTapGesture {
+                searchText = ""
+                isSearchBarFocused = false
+            }
+            .navigationTitle("Coin Tracker")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
@@ -78,6 +83,9 @@ extension MainView {
             LazyVStack(spacing: 15) {
                 ForEach(0..<20) { _ in
                     CoinRow(coin: PriceCoin.mock)
+                        .onTapGesture {
+                            // action
+                        }
                 }
             }
             .padding(.top)

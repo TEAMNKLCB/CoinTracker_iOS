@@ -11,11 +11,25 @@ import SwiftUI
 struct CoinTracker_iOSApp: App {
     init() {
         DIContainer.shared.registration()
+        initToolbarColor()
     }
     
     var body: some Scene {
         WindowGroup {
             MainView()
         }
+    }
+}
+
+extension CoinTracker_iOSApp {
+    private func initToolbarColor() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .clear // 네비게이션 바의 배경색 변경
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white] // 타이틀 색상 변경
+
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().compactAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
     }
 }

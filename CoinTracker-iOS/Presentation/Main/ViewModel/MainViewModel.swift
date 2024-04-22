@@ -7,6 +7,7 @@
 
 import SwiftUI
 
-final class MainViewModel: ObservableObject {
+final class MainViewModel: BaseViewModel {
     
 }
+
