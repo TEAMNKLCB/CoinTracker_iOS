@@ -16,7 +16,7 @@ struct CoinTracker_iOSApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MainCoordinator()
         }
     }
 }

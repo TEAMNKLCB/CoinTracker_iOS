@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2A19B1C32BD645FA001F765D /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19B1C22BD645FA001F765D /* BaseViewModel.swift */; };
+		2A19B1D22BD68FC1001F765D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19B1D12BD68FC1001F765D /* MainCoordinator.swift */; };
+		2A19B1D62BD69140001F765D /* PriceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19B1D52BD69140001F765D /* PriceDetailView.swift */; };
+		2A19B1D82BD69165001F765D /* RankingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19B1D72BD69165001F765D /* RankingDetailView.swift */; };
+		2A19B1DB2BD69E76001F765D /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19B1DA2BD69E76001F765D /* AppRouter.swift */; };
 		2A4F27482BCD65F300904752 /* PlaceholderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F27472BCD65F300904752 /* PlaceholderModifier.swift */; };
 		2A4F274B2BCD695500904752 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F274A2BCD695500904752 /* SearchBar.swift */; };
 		2A4F274D2BCD6AD600904752 /* HideModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F274C2BCD6AD600904752 /* HideModifier.swift */; };
@@ -27,7 +31,6 @@
 		2A587F4A2BCAB19700E64FD9 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F492BCAB19700E64FD9 /* DIContainer.swift */; };
 		2A587F522BCACA8E00E64FD9 /* DIContainer+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F512BCACA8E00E64FD9 /* DIContainer+Injection.swift */; };
 		2A587F5B2BCADA3C00E64FD9 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F5A2BCADA3C00E64FD9 /* CoordinatorProtocol.swift */; };
-		2A587F5E2BCADADF00E64FD9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A587F5D2BCADADF00E64FD9 /* DetailView.swift */; };
 		2AFEE35A2BCEC34A00F446B9 /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFEE3592BCEC34A00F446B9 /* TabItemView.swift */; };
 		2AFEE3602BCEE49A00F446B9 /* CoinRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFEE35F2BCEE49A00F446B9 /* CoinRow.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +47,10 @@
 
 /* Begin PBXFileReference section */
 		2A19B1C22BD645FA001F765D /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		2A19B1D12BD68FC1001F765D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		2A19B1D52BD69140001F765D /* PriceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceDetailView.swift; sourceTree = "<group>"; };
+		2A19B1D72BD69165001F765D /* RankingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingDetailView.swift; sourceTree = "<group>"; };
+		2A19B1DA2BD69E76001F765D /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		2A4F27472BCD65F300904752 /* PlaceholderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderModifier.swift; sourceTree = "<group>"; };
 		2A4F274A2BCD695500904752 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		2A4F274C2BCD6AD600904752 /* HideModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideModifier.swift; sourceTree = "<group>"; };
@@ -65,7 +72,6 @@
 		2A587F492BCAB19700E64FD9 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		2A587F512BCACA8E00E64FD9 /* DIContainer+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DIContainer+Injection.swift"; sourceTree = "<group>"; };
 		2A587F5A2BCADA3C00E64FD9 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
-		2A587F5D2BCADADF00E64FD9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		2AFEE3592BCEC34A00F446B9 /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
 		2AFEE35F2BCEE49A00F446B9 /* CoinRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +94,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A19B1D02BD68F8A001F765D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2A19B1D12BD68FC1001F765D /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2A19B1D32BD6911A001F765D /* RankingDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				2A19B1D72BD69165001F765D /* RankingDetailView.swift */,
+			);
+			path = RankingDetailView;
+			sourceTree = "<group>";
+		};
+		2A19B1D42BD69126001F765D /* PriceDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2A19B1D52BD69140001F765D /* PriceDetailView.swift */,
+			);
+			path = PriceDetail;
+			sourceTree = "<group>";
+		};
 		2A4F27462BCD65E900904752 /* ViewModifier */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,7 +222,8 @@
 				2A4F27492BCD66D500904752 /* Components */,
 				2A4F27462BCD65E900904752 /* ViewModifier */,
 				2A587F412BCAA68500E64FD9 /* Main */,
-				2A587F5C2BCADACC00E64FD9 /* Detail */,
+				2A19B1D32BD6911A001F765D /* RankingDetailView */,
+				2A19B1D42BD69126001F765D /* PriceDetail */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -200,6 +231,7 @@
 		2A587F412BCAA68500E64FD9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2A19B1D02BD68F8A001F765D /* Coordinator */,
 				2AFEE35E2BCEC36C00F446B9 /* ViewModel */,
 				2AFEE35D2BCEC36600F446B9 /* View */,
 			);
@@ -236,19 +268,12 @@
 		2A587F572BCAD1DA00E64FD9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2A19B1DA2BD69E76001F765D /* AppRouter.swift */,
 				2A19B1C22BD645FA001F765D /* BaseViewModel.swift */,
 				2A587F5A2BCADA3C00E64FD9 /* CoordinatorProtocol.swift */,
 				2A4F274E2BCD73B900904752 /* Constant.swift */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		2A587F5C2BCADACC00E64FD9 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				2A587F5D2BCADADF00E64FD9 /* DetailView.swift */,
-			);
-			path = Detail;
 			sourceTree = "<group>";
 		};
 		2AFEE35D2BCEC36600F446B9 /* View */ = {
@@ -372,15 +397,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A587F5B2BCADA3C00E64FD9 /* CoordinatorProtocol.swift in Sources */,
+				2A19B1D22BD68FC1001F765D /* MainCoordinator.swift in Sources */,
 				2A19B1C32BD645FA001F765D /* BaseViewModel.swift in Sources */,
-				2A587F5E2BCADADF00E64FD9 /* DetailView.swift in Sources */,
 				2A587F522BCACA8E00E64FD9 /* DIContainer+Injection.swift in Sources */,
 				2A587F432BCAA6B100E64FD9 /* MainView.swift in Sources */,
 				2A577EE32BD0080F002E9630 /* PriceCoin.swift in Sources */,
 				2A4F274D2BCD6AD600904752 /* HideModifier.swift in Sources */,
 				2A587F162BC93F2400E64FD9 /* CoinTracker-iOSApp.swift in Sources */,
 				2A4F274B2BCD695500904752 /* SearchBar.swift in Sources */,
+				2A19B1DB2BD69E76001F765D /* AppRouter.swift in Sources */,
 				2A4F27552BCD8A7900904752 /* RankingCoin.swift in Sources */,
+				2A19B1D82BD69165001F765D /* RankingDetailView.swift in Sources */,
 				2A4F27582BCD923300904752 /* String+Extension.swift in Sources */,
 				2A587F4A2BCAB19700E64FD9 /* DIContainer.swift in Sources */,
 				2A577EE52BD027F7002E9630 /* Double+Extension.swift in Sources */,
@@ -388,6 +415,7 @@
 				2A577EE12BD00725002E9630 /* CoinDetail.swift in Sources */,
 				2AFEE3602BCEE49A00F446B9 /* CoinRow.swift in Sources */,
 				2A4F27482BCD65F300904752 /* PlaceholderModifier.swift in Sources */,
+				2A19B1D62BD69140001F765D /* PriceDetailView.swift in Sources */,
 				2AFEE35A2BCEC34A00F446B9 /* TabItemView.swift in Sources */,
 				2A4F27512BCD86B600904752 /* Dropdown.swift in Sources */,
 				2A587F462BCAA74C00E64FD9 /* MainViewModel.swift in Sources */,

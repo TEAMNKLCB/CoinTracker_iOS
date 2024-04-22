@@ -8,7 +8,9 @@
 import SwiftUI
 
 protocol DestinationProtocol: Equatable {
+    associatedtype Routes: Equatable
     associatedtype Destination: View
+    var route: Routes { get }
     var content: Destination { get }
 }
 

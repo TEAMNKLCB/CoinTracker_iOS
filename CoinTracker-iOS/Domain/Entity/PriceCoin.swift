@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PriceCoin: Decodable {
+struct PriceCoin: Decodable, Equatable {
     let id, symbol, name: String
     let image: String
     let currentPrice: Double

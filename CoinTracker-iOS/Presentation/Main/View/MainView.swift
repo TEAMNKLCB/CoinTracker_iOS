@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    @StateObject var viewModel: MainViewModel = MainViewModel()
-    
+    @ObservedObject var viewModel: MainViewModel
     @FocusState private var isSearchBarFocused: Bool
     @State private var searchText = ""
     @State private var selectedTab: CategoryTab = .coins
@@ -84,9 +83,14 @@ extension MainView {
                 ForEach(0..<20) { _ in
                     CoinRow(coin: PriceCoin.mock)
                         .onTapGesture {
-                            // action
+                            viewModel.didTapPriceCoinRow(coin: .mock)
                         }
                 }
+                
+                Color.clear
+                    .onAppear {
+                        print("more!")
+                    }
             }
             .padding(.top)
         }
@@ -98,5 +102,5 @@ extension MainView {
 }
 
 #Preview {
-    MainView()
+    MainView(viewModel: MainViewModel())
 }
